@@ -2,7 +2,7 @@
 - name: Ansible playbook to install NTP
   hosts: "*"
   
-    tasks:
+  tasks:
     - name: Installing ntp with yum
       yum: name=ntp state=present
     
