@@ -1,0 +1,12 @@
+#
+# example of a Dockerfile
+#
+FROM centos:latest
+MAINTAINER Name "Name@domain.com" 
+
+
+RUN yum update -y
+RUN yum install talk -y 
+
+
+WORKDIR /opt/docker
