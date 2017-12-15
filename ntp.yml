@@ -13,7 +13,8 @@
       service: name=ntpd state=started enabled=yes
 
     - name: addind directory
-      file: path=/var/tmp/jarun owner=jenkins group=docker state=directory
+      file: path=/var/tmp/jarun owner=root group=root state=directory
+
 
 ...
  
