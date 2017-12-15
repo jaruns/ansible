@@ -1,6 +1,6 @@
 ---
 - name: Ansible playbook to install NTP
-  hosts: client
+  hosts: "*"
   
   tasks:
   - name: Installing ntp with yum
