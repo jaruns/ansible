@@ -2,16 +2,14 @@
 - name: Ansible playbook to install NTP
   hosts: "*"
   
-  tasks:
-  - name: Installing ntp with yum
-    yum: name=ntp state=present
+    tasks:
+    - name: Installing ntp with yum
+      yum: name=ntp state=present
     
-  - name: Creating config file
-    file: path=/etc/ntp.conf state=file
+    - name: Creating config file
+      file: path=/etc/ntp.conf state=file
     
-  - name: Starting ntpd service 
-    service: name=ntpd state=started enabled=yes
-    
-    
+    - name: Starting ntpd service 
+      service: name=ntpd state=started enabled=yes
 ...
  
